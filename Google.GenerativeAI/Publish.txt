@@ -1,0 +1,15 @@
+﻿# Build and pack the project
+dotnet pack -c Release
+
+# Remove the old NuGet source if it exists
+dotnet nuget remove source 365ArchitectPublicFeed
+
+# Add the NuGet source with PAT
+dotnet nuget add source "https://pkgs.dev.azure.com/365Architect/FrameworkLibrary/_packaging/365ArchitectPublicFeed/nuget/v3/index.json"
+    --name "365ArchitectPublicFeed" 
+    --username "AzureDevOps" 
+    --password "YOUR PAT" 
+    --store-password-in-clear-text
+
+# Push the package (update the version if needed)
+dotnet nuget push "Google.GenerativeAI/bin/Release/Google.GenerativeAI.1.0.0.nupkg" --source "365ArchitectPublicFeed" --api-key AzureDevOps
