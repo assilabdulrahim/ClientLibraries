@@ -1,7 +1,7 @@
 namespace Google.GenerativeAI.Gemini.Textual.Request
 {
+    using Google.GenerativeAI.Enums;
     using Google.GenerativeAI.Extensions;
-    using Google.GenerativeAI.Gemini;
     using Google.GenerativeAI.Gemini.Image;
     using Google.GenerativeAI.Gemini.Textual.Response;
     using Microsoft.Extensions.Options;

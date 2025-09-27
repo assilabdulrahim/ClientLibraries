@@ -1,4 +1,4 @@
-﻿namespace Google.GenerativeAI.Gemini
+﻿namespace Google.GenerativeAI.Enums
 {
     using System.Runtime.Serialization;
 

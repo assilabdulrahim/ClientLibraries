@@ -1,3 +1,4 @@
+using Google.GenerativeAI.Enums;
 using Google.GenerativeAI.Gemini.Textual.Response;
 
 namespace Google.GenerativeAI.Gemini.Textual.Request

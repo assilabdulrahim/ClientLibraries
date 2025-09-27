@@ -1,6 +1,6 @@
 ﻿namespace Google.GenerativeAI.Gemini.Image
 {
-    using Google.GenerativeAI.Gemini;
+    using Google.GenerativeAI.Enums;
     using Google.GenerativeAI.Gemini.Image.Request;
 
     /// <summary>
