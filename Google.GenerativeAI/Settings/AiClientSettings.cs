@@ -9,6 +9,5 @@ namespace Google.GenerativeAI.Settings
         public string LlmUrl { get; set; }
         public int MaxPayloadSize { get; set; } = 36000;
         public int OutputDimensionality { get; set; } = 768;
-
     }
 }
